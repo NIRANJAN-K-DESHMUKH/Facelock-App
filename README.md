@@ -1,20 +1,5 @@
 # Facelock-App
 ## An AI based Facial Recognition Solution For Vulnerabilities in Smart Home Systems
-# 
-### Flowchart:
-![image](https://github.com/NIRANJAN-K-DESHMUKH/Facelock-App/assets/82277471/422a27ac-92f9-4b1f-a3ee-001995866b96)
-#
-### Algorithm:
-
-1.	The first step is enrollment, we will store the images of authorized people in a separate folder as a database that we can access in future to record and verify the access.
-2.	Then, we start the camera for video capturing.
-3.	The video will have some frames per second rate - fps rate. So, we extract each frame from the incoming video.
-4.	Then, for each extracted frame we do face detection.
-5.	Next step will be face recognition by comparison with the stored images. It will compare the incoming face with the stored ones, if it matches, allow the user and mark the access. Otherwise, go for next frames.
-6.	It will continue the loop for some frames specified by us, if the face doesn't match it won't allow access to that person.
-7.	If the user in the camera already has an entry in the file then nothing will happen. The name of the user along with the current time stamp will be stored. 
-8.	If the person is unknown, so we change the name to ‘unknown’ and don’t allow the access as well as send the mail to the concerned authorities.
-
 #
 ### Tools Used:
 #### Built with:
@@ -32,6 +17,21 @@
 - Dlib is a facial detector with pre-trained models, the dlib is used to estimate the location of 68 coordinates (x, y) that map the facial points on a person's face.
 - NumPy is a Python library used for working with arrays.
 - Cmake allows the path to an imported library to be used without having to know what type of library it is.
+# 
+### Flowchart:
+![image](https://github.com/NIRANJAN-K-DESHMUKH/Facelock-App/assets/82277471/422a27ac-92f9-4b1f-a3ee-001995866b96)
+#
+### Algorithm:
+
+1.	The first step is enrollment, we will store the images of authorized people in a separate folder as a database that we can access in future to record and verify the access.
+2.	Then, we start the camera for video capturing.
+3.	The video will have some frames per second rate - fps rate. So, we extract each frame from the incoming video.
+4.	Then, for each extracted frame we do face detection.
+5.	Next step will be face recognition by comparison with the stored images. It will compare the incoming face with the stored ones, if it matches, allow the user and mark the access. Otherwise, go for next frames.
+6.	It will continue the loop for some frames specified by us, if the face doesn't match it won't allow access to that person.
+7.	If the user in the camera already has an entry in the file then nothing will happen. The name of the user along with the current time stamp will be stored. 
+8.	If the person is unknown, so we change the name to ‘unknown’ and don’t allow the access as well as send the mail to the concerned authorities.
+
 #
 ### Execution: 
 #### 
